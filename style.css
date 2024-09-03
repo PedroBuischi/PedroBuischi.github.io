@@ -1,0 +1,350 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2.titulo span {
+    color: rgb(247, 182, 4);
+}
+
+button:hover, form .btn-enviar input {
+    box-shadow: 0px 0px 8px rgb(247, 182, 4);
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 40px 0;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* ESTILO DO LOGO */
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* ESTILO DO MENU DE NAVEGAÇÃO */
+.menu-desktop ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-desktop ul li a:hover {
+    color: white;
+}
+
+/* ESTILO DO BOTÃO DE CONTATO */
+.btn a button {
+    background-color: rgb(247, 182, 4);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn a button:hover {
+    background-color: rgb(220, 162, 4);
+    transform: scale(1.05);
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 0;
+    box-shadow: 0 0 40px 10px rgba(128, 128, 128, 0.185); /* Adicionando sombra ao topo do site */
+}
+
+.topo-do-site h1 {
+    color: white;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    color: rgb(220, 162, 4);
+}
+
+.topo-do-site p {
+    color: white;
+    margin: 40px 0;
+}
+
+.btn-contato a button {
+    background-color: rgb(247, 182, 4);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-contato a button:hover {
+    background-color: rgb(220, 162, 4);
+    transform: scale(1.05);
+}
+
+/* Ajuste do tamanho, posição e bordas arredondadas da imagem no topo do site */
+.topo-do-site .img-topo-site img {
+    width: 100%;
+    max-width: 450px; /* Ajuste o tamanho máximo conforme necessário */
+    height: auto;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Ajuste do tamanho, posição e bordas arredondadas da imagem na seção Sobre */
+.sobre .img-sobre img {
+    width: 100%;
+    max-width: 600px; /* Ajuste o tamanho máximo conforme necessário */
+    height: auto;
+    border-radius: 20px; /* Ajuste a borda conforme necessário */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+}
+
+/* Animação para a imagem do topo do site */
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+/* ESTILO ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 0;
+    box-shadow: 0 0 40px 10px gray; /* Adicionando sombra às especialidades */
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin-top: 45px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffffff69;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: rgb(220, 162, 4);
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.especialidades .especialidades-box p {
+    font-size: 16px;
+}
+
+/* ESTILO SOBRE */
+section.sobre {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(128, 128, 128, 0.185); /* Adicionando sombra à seção Sobre */
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+    max-width: 600px; /* Ajuste o tamanho máximo para o texto */
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: rgb(220, 162, 4);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.btn-social a button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(220, 162, 4);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.sobre .btn-social a button:hover {
+    transform: scale(1.1);
+    background-color: rgb(247, 182, 4);
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO - FALA COMIGO */
+section.formulario {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px gray; /* Adicionando sombra à seção do formulário */
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.185);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form.btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form.btn-enviar input {
+    width: 120px;
+    background-color: rgb(247, 182, 4);
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 15px 30px; /* Ajuste o tamanho do padding conforme necessário */
+    border-radius: 30px;
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+form.btn-enviar input:hover {
+    background-color: rgb(220, 162, 4);
+    transform: scale(1.05);
+}
+
+/* ESTILO DO RODAPÉ */
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(128, 128, 128, 0.185);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .liner-footer {
+    padding: 20px 0;
+    text-align: center; /* Centraliza o conteúdo do rodapé */
+}
+
+.borda {
+    border-top: 2px solid rgb(247, 182, 4);
+}
+
+footer .liner-footer p i {
+    color: rgb(247, 182, 4);
+    font-size: 22px;
+}
+
+footer .liner-footer p a {
+    color: #fff;
+}
+
+footer .logo-footer img {
+    width: 100px; /* Ajuste o tamanho da logo no rodapé */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Centraliza a logo */
+}
+
+
